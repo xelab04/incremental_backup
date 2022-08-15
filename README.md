@@ -9,6 +9,7 @@ The program is still in Beta, meaning you may encounter bugs or errors during us
 
 Currently working on a companion script which will make recovery of files from a backup device much easier than manually copy/pasting.
 Known bugs and issues:
-  - Cannot copy files with <'> in the names since the cp command does not appreciate it.
+  - Cannot copy files with ' in the names since the cp command does not appreciate it.
   - Encounters errors at locked files. A workaround is using sudo to run the Python script.
+  - Copies Trash files.
   - Is not yet compatible with Windows or MacOS.
