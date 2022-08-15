@@ -1,8 +1,11 @@
 # Incremental Backup
 
 Incremental backup program written entirely in Python3
-Scans the folder for any existing files and copies those files to a backup folder. Folders can be specified in the paths.py file and is necessary before use. In order to know which files have changed, there is a csv file listing the file paths and their corresponding "last date modified".
-The program will create the same file structure on the backup device. Meaning that a file being backed up from "/home/user/documents/file.txt" will then be found at "/backup_drive/home/user/documents/file.txt" making recovery of files much simpler. 
+Scans the folder(s) for any existing files and copies those files to a backup folder if they have changed since the last time the program was run. Folders can be specified in the paths.py file and is necessary before use.
+
+In order to know which files have changed, there is a csv file listing the file paths and their corresponding "last date modified".
+
+Bonus feature: The program will create the same file structure on the backup device. Meaning that a file being backed up from "/home/user/documents/file.txt" will then be found at "/backup_drive/home/user/documents/file.txt" making recovery of files much simpler. 
 
 The program is still in Beta, meaning you may encounter bugs or errors during use. However, I feel that it is complete enough for public use.
 
