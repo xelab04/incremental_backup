@@ -15,4 +15,9 @@ Known bugs and issues:
   - Cannot copy files with ' in the names since the cp command does not appreciate it.
   - Encounters errors at locked files. A workaround is using sudo to run the Python script.
   - Copies Trash files.
-  - Is not yet compatible with Windows or MacOS.
+  - Is not yet compatible with Windows or MacOS (may be resolved, needs testing)
+  - pycache generated when the program is run means the program ignores changes to "paths.py"
+
+
+Change Log
+  - Changed copying method from "os" to "shutil" to help work on Windows and MacOS.
