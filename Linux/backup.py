@@ -1,6 +1,7 @@
 import csv
 import os
 import paths
+import shutil
 from termcolor import colored
 
 def potato(path):
@@ -79,6 +80,7 @@ def copy_file(usb_addr,write_array):
             continue
         if not os.path.exists(dst):
             os.makedirs(dst)
+        shutil.copyfile(src, dst)
         #os.system(f"cp '{src}' '{dst}'")
 
 def get_last_slash(string):
